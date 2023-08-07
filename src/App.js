@@ -1,8 +1,8 @@
 import "./App.css";
-import './categories.styles.scss';
-import CategoryItem from "./components/category-item/category-item.component";
+import Categories from "./components/directory/categories.component";
 
 function App() {
+
   const categories = [
     {
       "id": 1,
@@ -29,14 +29,12 @@ function App() {
       "title": "mens",
       "imageUrl": "https://i.ibb.co/R70vBrQ/men.png"
     }
-  ]
+  ];
   
   return (
-    <div className="categories-container">
-      {categories.map((category) => (
-      <CategoryItem key={category.id} category={category}/>
-      ))}
-    </div>
+    <>
+     <Categories categories={categories} />
+    </>
   );
 }
 
