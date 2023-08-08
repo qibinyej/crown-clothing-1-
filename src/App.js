@@ -1,4 +1,4 @@
-import "./App.css";
+import "./index.scss";
 import Categories from "./components/directory/categories.component";
 
 function App() {
